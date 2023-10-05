@@ -1,1 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
+    <link rel="stylesheet" href="../CSS/Style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="nav-logo border">
+          <div class="logo">
+            <p>
+              Indian <br />
+              SuperStore
+            </p>
+          </div>
+        </div>
+        <div class="nav-address border">
+          <p class="add1">Deliver to</p>
+          <div class="add-icon">
+            <i class="fas fa-map-marker-alt"></i>
+            <p class="add2">ON, Canada</p>
+          </div>
+        </div>
+        <div class="nav-search">
+          <select id="categoryFilter" class="search-select">
+            <option value="all">All</option>
+            <option value="shoes">shoes</option>
+            <option value="Smartphone">Electronics</option>
+            <option value="clothes">Clothes</option>
+            <option value="Grocery">Grocery</option>
+          </select>
+          <input
+            placeholder="Search Indian Supermarket"
+            id="searchInput"
+            class="search-input"
+          />
+          <div class="search-icon">
+            <button class="search-icon" id="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+        <div class="nav-signin border">
+          <p>
+            <span><a href="#home">Hey there!, Sign in</a></span>
+          </p>
+          <p class="nav-second">
+            <a href="#home" class="nav-link">Account & Lists</a>
+          </p>
+        </div>
+        <div class="nav-return border">
+          <p>
+            <span><a href="#home"></a></span>
+          </p>
+          <p class="nav-second">
+            <a href="../loginpage.html" class="nav-link">Logout</a>
+          </p>
+        </div>
+        <div class="shopping">
+          <div class="nav-cart border">
+            <button class="cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <div class="num_product">
+                <span class="quantity">0</span>
+              </div>
+            </button>
+            Cart
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="products"></div>
+    <div class="hero-section">
+      <div class="hero-msg">
+        <p>
+          You are on Indian Supermarket
+          <a href="">Click here to explore more...</a>
+        </p>
+      </div>
+    </div>
+    <div class="heading">
+      <h2>Find Great Deals on the Product</h2>
+    </div>
+    <div class="list">
+      <!-- Search results -->
+      <!-- product list -->
+    </div>
+    <footer>
+      <div class="foot-panel1">
+        <button id="btn1" onclick="scrollToTop()">Back to Top</button>
+      </div>
+      <div class="foot-panel2">
+        <ul>
+          <p>Get to know</p>
+          <a>Career</a>
+          <a>Blog</a>
+          <a>About us</a>
+        </ul>
+        <ul>
+          <p>Get to know</p>
+          <a>Career</a>
+          <a>Blog</a>
+          <a>About us</a>
+        </ul>
+        <ul>
+          <p>Get to know</p>
+          <a>Career</a>
+          <a>Blog</a>
+          <a>About us</a>
+        </ul>
+        <ul>
+          <p>Get to know</p>
+          <a>Career</a>
+          <a>Blog</a>
+          <a>About us</a>
+        </ul>
+      </div>
+      <div class="foot-panel3">
+        <div class="pages">
+          <a>Condition of use </a>
+          <a>Privacy Notice</a>
+          <a>Yours Ads Privacy Choices</a>
+        </div>
+        <div class="copyrights">
+          © 2023 Indian Super Store All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <div class="card">
+      <h1>Shopping Cart</h1>
+      <ul class="listCard"></ul>
+      <div class="checkout">
+        <div class="total">0</div>
+        <div class="closeShopping"><a href="#close">Close</a></div>
+        <button id="checkoutButton">Place my Order</button>
+      </div>
+    </div>
+    <script src="../Script/script.js"></script>
+  </body>
+</html>
