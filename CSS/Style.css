@@ -10,7 +10,7 @@ body {
 
 .nav {
     height: 60px;
-    width: 100%;
+    width: 100vh;
     background-color: rgb(162, 0, 198);
     color: white;
     display: flex;
